@@ -1,0 +1,154 @@
+{
+  "scope": "Six handcrafted fixture cases over the 10-film starter catalogue, with relevant technicians selected from known credits. Regression evidence only; not a held-out user study, calibration, fairness analysis or proof of generalization.",
+  "metrics": {
+    "hybrid": {
+      "mrr": 1,
+      "hitAt3": 1
+    },
+    "popularity": {
+      "mrr": 0.542,
+      "hitAt3": 0.833
+    },
+    "genre-overlap": {
+      "mrr": 0.833,
+      "hitAt3": 1
+    }
+  },
+  "details": [
+    {
+      "case": "Kumbalangi camera",
+      "relevant": [
+        "Shyju Khalid"
+      ],
+      "rankings": {
+        "hybrid": [
+          "Shyju Khalid",
+          "Sameer Thahir"
+        ],
+        "popularity": [
+          "Shyju Khalid",
+          "Sameer Thahir"
+        ],
+        "genre-overlap": [
+          "Shyju Khalid",
+          "Sameer Thahir"
+        ]
+      }
+    },
+    {
+      "case": "Bangalore editing",
+      "relevant": [
+        "Praveen Prabhakar"
+      ],
+      "rankings": {
+        "hybrid": [
+          "Praveen Prabhakar",
+          "Alphonse Puthren",
+          "Vivek Harshan"
+        ],
+        "popularity": [
+          "Alphonse Puthren",
+          "Praveen Prabhakar",
+          "Vivek Harshan"
+        ],
+        "genre-overlap": [
+          "Praveen Prabhakar",
+          "Alphonse Puthren",
+          "Vivek Harshan"
+        ]
+      }
+    },
+    {
+      "case": "Premam score",
+      "relevant": [
+        "Rajesh Murugesan"
+      ],
+      "rankings": {
+        "hybrid": [
+          "Rajesh Murugesan",
+          "Bijibal",
+          "Gopi Sundar",
+          "Sushin Shyam"
+        ],
+        "popularity": [
+          "Sushin Shyam",
+          "Bijibal",
+          "Gopi Sundar",
+          "Rajesh Murugesan"
+        ],
+        "genre-overlap": [
+          "Rajesh Murugesan",
+          "Bijibal",
+          "Gopi Sundar",
+          "Sushin Shyam"
+        ]
+      }
+    },
+    {
+      "case": "Interstellar camera",
+      "relevant": [
+        "Hoyte van Hoytema"
+      ],
+      "rankings": {
+        "hybrid": [
+          "Hoyte van Hoytema",
+          "Roger Deakins"
+        ],
+        "popularity": [
+          "Roger Deakins",
+          "Hoyte van Hoytema"
+        ],
+        "genre-overlap": [
+          "Hoyte van Hoytema",
+          "Roger Deakins"
+        ]
+      }
+    },
+    {
+      "case": "Blade Runner editing",
+      "relevant": [
+        "Joe Walker"
+      ],
+      "rankings": {
+        "hybrid": [
+          "Joe Walker",
+          "Lee Smith",
+          "Stuart Baird"
+        ],
+        "popularity": [
+          "Lee Smith",
+          "Joe Walker",
+          "Stuart Baird"
+        ],
+        "genre-overlap": [
+          "Lee Smith",
+          "Joe Walker",
+          "Stuart Baird"
+        ]
+      }
+    },
+    {
+      "case": "Skyfall score",
+      "relevant": [
+        "Thomas Newman"
+      ],
+      "rankings": {
+        "hybrid": [
+          "Thomas Newman",
+          "Benjamin Wallfisch",
+          "Hans Zimmer"
+        ],
+        "popularity": [
+          "Hans Zimmer",
+          "Thomas Newman",
+          "Benjamin Wallfisch"
+        ],
+        "genre-overlap": [
+          "Hans Zimmer",
+          "Thomas Newman",
+          "Benjamin Wallfisch"
+        ]
+      }
+    }
+  ]
+}

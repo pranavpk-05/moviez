@@ -1,0 +1,1321 @@
+{
+  "films": [
+    {
+      "id": "f3823891-d540-5520-baa2-5757e63361a1",
+      "externalId": "Q60737728",
+      "title": "Kumbalangi Nights",
+      "originalTitle": "Kumbalangi Nights",
+      "year": 2019,
+      "language": "Malayalam",
+      "countries": [
+        "India"
+      ],
+      "industry": "Malayalam",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "synopsis": null,
+      "runtime": null,
+      "color": "#516b65",
+      "crew": [
+        {
+          "person": "cc5e753b-d734-552c-986b-3cccb0e26137",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q60737728",
+            "url": "https://www.wikidata.org/wiki/Q60737728",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "e37bfd97-2d40-5952-a13e-cf44cf64084a",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q60737728",
+            "url": "https://www.wikidata.org/wiki/Q60737728",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q60737728",
+        "url": "https://www.wikidata.org/wiki/Q60737728",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "9d6e844c-aec4-54be-91c1-186c945b27da",
+      "externalId": "Q124636001",
+      "title": "Manjummel Boys",
+      "originalTitle": "Manjummel Boys",
+      "year": 2024,
+      "language": "Malayalam",
+      "countries": [
+        "India"
+      ],
+      "industry": "Malayalam",
+      "genres": [
+        "Thriller",
+        "Adventure"
+      ],
+      "synopsis": null,
+      "runtime": 135,
+      "color": "#75594f",
+      "crew": [
+        {
+          "person": "cc5e753b-d734-552c-986b-3cccb0e26137",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q124636001",
+            "url": "https://www.wikidata.org/wiki/Q124636001",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "1ec5fbdd-c5f8-533a-8c88-b26cb76cd77d",
+          "role": "Film editor",
+          "department": "Film editing",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q124636001",
+            "url": "https://www.wikidata.org/wiki/Q124636001",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "e37bfd97-2d40-5952-a13e-cf44cf64084a",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q124636001",
+            "url": "https://www.wikidata.org/wiki/Q124636001",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q124636001",
+        "url": "https://www.wikidata.org/wiki/Q124636001",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "4f7c0714-bbdc-595e-baba-696d9b265a8c",
+      "externalId": "Q16837651",
+      "title": "Bangalore Days",
+      "originalTitle": "Bangalore Days",
+      "year": 2014,
+      "language": "Malayalam",
+      "countries": [
+        "India"
+      ],
+      "industry": "Malayalam",
+      "genres": [
+        "Drama",
+        "Romance"
+      ],
+      "synopsis": null,
+      "runtime": 171,
+      "color": "#535d68",
+      "crew": [
+        {
+          "person": "d79d6dd6-b814-55d2-a80d-845c3a24933e",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q16837651",
+            "url": "https://www.wikidata.org/wiki/Q16837651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "2a8b50df-f8e6-583d-8eb0-de6085ddc1ef",
+          "role": "Film editor",
+          "department": "Film editing",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q16837651",
+            "url": "https://www.wikidata.org/wiki/Q16837651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "e15f7bc0-3c86-5c03-b320-ab185e49f74b",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q16837651",
+            "url": "https://www.wikidata.org/wiki/Q16837651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q16837651",
+        "url": "https://www.wikidata.org/wiki/Q16837651",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "c2072804-9c89-5858-8c18-034e4aa08dd1",
+      "externalId": "Q23681158",
+      "title": "Maheshinte Prathikaaram",
+      "originalTitle": "Maheshinte Prathikaaram",
+      "year": 2016,
+      "language": "Malayalam",
+      "countries": [
+        "India"
+      ],
+      "industry": "Malayalam",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "synopsis": null,
+      "runtime": null,
+      "color": "#78664f",
+      "crew": [
+        {
+          "person": "cc5e753b-d734-552c-986b-3cccb0e26137",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q23681158",
+            "url": "https://www.wikidata.org/wiki/Q23681158",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "e3fe750a-7ab5-5362-bcdd-1e5557445cff",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q23681158",
+            "url": "https://www.wikidata.org/wiki/Q23681158",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q23681158",
+        "url": "https://www.wikidata.org/wiki/Q23681158",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "c58ba04d-660f-5ee3-9562-5358e33a00a5",
+      "externalId": "Q19895421",
+      "title": "Premam",
+      "originalTitle": "Premam",
+      "year": 2015,
+      "language": "Malayalam",
+      "countries": [
+        "India"
+      ],
+      "industry": "Malayalam",
+      "genres": [
+        "Romance",
+        "Comedy"
+      ],
+      "synopsis": null,
+      "runtime": 156,
+      "color": "#59615d",
+      "crew": [
+        {
+          "person": "ae1e239d-917e-577f-a875-9c0d8c964b1c",
+          "role": "Film editor",
+          "department": "Film editing",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q19895421",
+            "url": "https://www.wikidata.org/wiki/Q19895421",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "2bd630fe-f3c1-512a-982b-6144dfb53077",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q19895421",
+            "url": "https://www.wikidata.org/wiki/Q19895421",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q19895421",
+        "url": "https://www.wikidata.org/wiki/Q19895421",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "2a816ab5-ad03-5f17-a519-378da914fde2",
+      "externalId": "Q21500755",
+      "title": "Blade Runner 2049",
+      "originalTitle": "Blade Runner 2049",
+      "year": 2017,
+      "language": "English",
+      "countries": [],
+      "industry": "Hollywood",
+      "genres": [
+        "Science fiction",
+        "Thriller",
+        "Drama"
+      ],
+      "synopsis": null,
+      "runtime": null,
+      "color": "#5c616f",
+      "crew": [
+        {
+          "person": "e5ad94c4-c2b7-5e93-9fa1-8a18165f0f5e",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21500755",
+            "url": "https://www.wikidata.org/wiki/Q21500755",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "bd6e9d88-a984-50f7-ba89-6b06f0f2d7c9",
+          "role": "Film editor",
+          "department": "Film editing",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21500755",
+            "url": "https://www.wikidata.org/wiki/Q21500755",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "41ad2815-0d91-5847-8bb6-2738dcb0d753",
+          "role": "Production designer",
+          "department": "Production design",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21500755",
+            "url": "https://www.wikidata.org/wiki/Q21500755",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "18fb94b3-ba04-54f6-ba8d-4da26cccfe92",
+          "role": "Costume designer",
+          "department": "Costume design",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21500755",
+            "url": "https://www.wikidata.org/wiki/Q21500755",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "b84e6d82-6951-5404-8244-d65e21cbbdea",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21500755",
+            "url": "https://www.wikidata.org/wiki/Q21500755",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "f4f9b8a9-e00b-510a-91f3-827b8c3d938d",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21500755",
+            "url": "https://www.wikidata.org/wiki/Q21500755",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21500755",
+        "url": "https://www.wikidata.org/wiki/Q21500755",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "115a3c35-acac-57e3-a088-341277838a87",
+      "externalId": "Q13417189",
+      "title": "Interstellar",
+      "originalTitle": "Interstellar",
+      "year": 2014,
+      "language": "English",
+      "countries": [],
+      "industry": "Hollywood",
+      "genres": [
+        "Science fiction",
+        "Drama",
+        "Adventure"
+      ],
+      "synopsis": null,
+      "runtime": null,
+      "color": "#77614d",
+      "crew": [
+        {
+          "person": "fbf18bc5-2557-56b3-a866-1f7449ebc8dc",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q13417189",
+            "url": "https://www.wikidata.org/wiki/Q13417189",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "550a00a4-83aa-5cc4-8cba-99233a3e942e",
+          "role": "Film editor",
+          "department": "Film editing",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q13417189",
+            "url": "https://www.wikidata.org/wiki/Q13417189",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "e7dfba85-8afb-57b1-be6b-4a0cc987c78c",
+          "role": "Production designer",
+          "department": "Production design",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q13417189",
+            "url": "https://www.wikidata.org/wiki/Q13417189",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "78d9844b-ac40-5586-93b2-b2997709ee63",
+          "role": "Costume designer",
+          "department": "Costume design",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q13417189",
+            "url": "https://www.wikidata.org/wiki/Q13417189",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "9eababa9-2da4-5927-aed5-c46340de9901",
+          "role": "Visual effects supervisor",
+          "department": "Visual effects",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q13417189",
+            "url": "https://www.wikidata.org/wiki/Q13417189",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "b84e6d82-6951-5404-8244-d65e21cbbdea",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q13417189",
+            "url": "https://www.wikidata.org/wiki/Q13417189",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q13417189",
+        "url": "https://www.wikidata.org/wiki/Q13417189",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "e1e9a6c3-3862-57bf-a5af-f9ef4daaa07b",
+      "externalId": "Q4941",
+      "title": "Skyfall",
+      "originalTitle": "Skyfall",
+      "year": 2012,
+      "language": "English",
+      "countries": [],
+      "industry": "Hollywood",
+      "genres": [
+        "Action",
+        "Thriller"
+      ],
+      "synopsis": null,
+      "runtime": null,
+      "color": "#605a71",
+      "crew": [
+        {
+          "person": "e5ad94c4-c2b7-5e93-9fa1-8a18165f0f5e",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q4941",
+            "url": "https://www.wikidata.org/wiki/Q4941",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "0bbc2b67-182b-5e9a-a6c0-b9ba82f04261",
+          "role": "Film editor",
+          "department": "Film editing",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q4941",
+            "url": "https://www.wikidata.org/wiki/Q4941",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "41ad2815-0d91-5847-8bb6-2738dcb0d753",
+          "role": "Production designer",
+          "department": "Production design",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q4941",
+            "url": "https://www.wikidata.org/wiki/Q4941",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "46894bd2-a7e5-5be9-bfb7-a3e520a5565f",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q4941",
+            "url": "https://www.wikidata.org/wiki/Q4941",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q4941",
+        "url": "https://www.wikidata.org/wiki/Q4941",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "e46e8d78-c197-5611-835f-d92c6668f7b4",
+      "externalId": "Q21935651",
+      "title": "Dunkirk",
+      "originalTitle": "Dunkirk",
+      "year": 2017,
+      "language": "English",
+      "countries": [],
+      "industry": "Hollywood",
+      "genres": [
+        "War",
+        "Drama",
+        "Thriller"
+      ],
+      "synopsis": null,
+      "runtime": null,
+      "color": "#516b65",
+      "crew": [
+        {
+          "person": "fbf18bc5-2557-56b3-a866-1f7449ebc8dc",
+          "role": "Director of photography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21935651",
+            "url": "https://www.wikidata.org/wiki/Q21935651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "550a00a4-83aa-5cc4-8cba-99233a3e942e",
+          "role": "Film editor",
+          "department": "Film editing",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21935651",
+            "url": "https://www.wikidata.org/wiki/Q21935651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "e7dfba85-8afb-57b1-be6b-4a0cc987c78c",
+          "role": "Production designer",
+          "department": "Production design",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21935651",
+            "url": "https://www.wikidata.org/wiki/Q21935651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "81c6b5ff-0805-5867-9837-7923a59b6d81",
+          "role": "Costume designer",
+          "department": "Costume design",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21935651",
+            "url": "https://www.wikidata.org/wiki/Q21935651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        },
+        {
+          "person": "b84e6d82-6951-5404-8244-d65e21cbbdea",
+          "role": "Composer",
+          "department": "Music composition",
+          "source": {
+            "name": "Wikidata",
+            "externalId": "Q21935651",
+            "url": "https://www.wikidata.org/wiki/Q21935651",
+            "license": "CC0-1.0",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Checked against structured statements; not independently audited against screen credits."
+          }
+        }
+      ],
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21935651",
+        "url": "https://www.wikidata.org/wiki/Q21935651",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "fbb41f5e-490a-5486-95d3-6136fafb951e",
+      "externalId": "academy-1917",
+      "title": "1917",
+      "originalTitle": "1917",
+      "year": 2019,
+      "language": "English",
+      "countries": [],
+      "industry": "Hollywood",
+      "genres": [
+        "War",
+        "Drama"
+      ],
+      "synopsis": null,
+      "runtime": null,
+      "color": "#75594f",
+      "crew": [
+        {
+          "person": "e5ad94c4-c2b7-5e93-9fa1-8a18165f0f5e",
+          "role": "Cinematography",
+          "department": "Cinematography",
+          "source": {
+            "name": "Academy of Motion Picture Arts and Sciences",
+            "externalId": "2020/1917",
+            "url": "https://www.oscars.org/oscars/ceremonies/2020",
+            "license": "Factual credit metadata; no images or prose copied",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Award-category credits, not the complete production crew."
+          }
+        },
+        {
+          "person": "46894bd2-a7e5-5be9-bfb7-a3e520a5565f",
+          "role": "Original score",
+          "department": "Music composition",
+          "source": {
+            "name": "Academy of Motion Picture Arts and Sciences",
+            "externalId": "2020/1917",
+            "url": "https://www.oscars.org/oscars/ceremonies/2020",
+            "license": "Factual credit metadata; no images or prose copied",
+            "checkedAt": "2026-10-20",
+            "status": "source-checked",
+            "note": "Award-category credits, not the complete production crew."
+          }
+        }
+      ],
+      "source": {
+        "name": "Academy of Motion Picture Arts and Sciences",
+        "externalId": "2020/1917",
+        "url": "https://www.oscars.org/oscars/ceremonies/2020",
+        "license": "Factual credit metadata; no images or prose copied",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Award-category credits, not the complete production crew."
+      }
+    }
+  ],
+  "people": [
+    {
+      "id": "cc5e753b-d734-552c-986b-3cccb0e26137",
+      "externalId": "Q24572312",
+      "name": "Shyju Khalid",
+      "alternativeNames": [],
+      "department": "Cinematography",
+      "subtitle": "Cinematography professional",
+      "bio": null,
+      "styles": [
+        "Naturalistic visuals"
+      ],
+      "color": "#516b65",
+      "initials": "SK",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q60737728",
+        "url": "https://www.wikidata.org/wiki/Q60737728",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "e37bfd97-2d40-5952-a13e-cf44cf64084a",
+      "externalId": "Q29453931",
+      "name": "Sushin Shyam",
+      "alternativeNames": [],
+      "department": "Music composition",
+      "subtitle": "Music composition professional",
+      "bio": null,
+      "styles": [],
+      "color": "#75594f",
+      "initials": "SS",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q60737728",
+        "url": "https://www.wikidata.org/wiki/Q60737728",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "1ec5fbdd-c5f8-533a-8c88-b26cb76cd77d",
+      "externalId": "Q16729682",
+      "name": "Vivek Harshan",
+      "alternativeNames": [],
+      "department": "Film editing",
+      "subtitle": "Film editing professional",
+      "bio": null,
+      "styles": [],
+      "color": "#535d68",
+      "initials": "VH",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q124636001",
+        "url": "https://www.wikidata.org/wiki/Q124636001",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "d79d6dd6-b814-55d2-a80d-845c3a24933e",
+      "externalId": "Q7409256",
+      "name": "Sameer Thahir",
+      "alternativeNames": [],
+      "department": "Cinematography",
+      "subtitle": "Cinematography professional",
+      "bio": null,
+      "styles": [],
+      "color": "#78664f",
+      "initials": "ST",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q16837651",
+        "url": "https://www.wikidata.org/wiki/Q16837651",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "2a8b50df-f8e6-583d-8eb0-de6085ddc1ef",
+      "externalId": "Q19518931",
+      "name": "Praveen Prabhakar",
+      "alternativeNames": [],
+      "department": "Film editing",
+      "subtitle": "Film editing professional",
+      "bio": null,
+      "styles": [],
+      "color": "#59615d",
+      "initials": "PP",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q16837651",
+        "url": "https://www.wikidata.org/wiki/Q16837651",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "e15f7bc0-3c86-5c03-b320-ab185e49f74b",
+      "externalId": "Q5584286",
+      "name": "Gopi Sundar",
+      "alternativeNames": [],
+      "department": "Music composition",
+      "subtitle": "Music composition professional",
+      "bio": null,
+      "styles": [],
+      "color": "#5c616f",
+      "initials": "GS",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q16837651",
+        "url": "https://www.wikidata.org/wiki/Q16837651",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "e3fe750a-7ab5-5362-bcdd-1e5557445cff",
+      "externalId": "Q4907221",
+      "name": "Bijibal",
+      "alternativeNames": [],
+      "department": "Music composition",
+      "subtitle": "Music composition professional",
+      "bio": null,
+      "styles": [],
+      "color": "#77614d",
+      "initials": "B",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q23681158",
+        "url": "https://www.wikidata.org/wiki/Q23681158",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "ae1e239d-917e-577f-a875-9c0d8c964b1c",
+      "externalId": "Q16223381",
+      "name": "Alphonse Puthren",
+      "alternativeNames": [],
+      "department": "Film editing",
+      "subtitle": "Film editing professional",
+      "bio": null,
+      "styles": [],
+      "color": "#605a71",
+      "initials": "AP",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q19895421",
+        "url": "https://www.wikidata.org/wiki/Q19895421",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "2bd630fe-f3c1-512a-982b-6144dfb53077",
+      "externalId": "Q20649813",
+      "name": "Rajesh Murugesan",
+      "alternativeNames": [],
+      "department": "Music composition",
+      "subtitle": "Music composition professional",
+      "bio": null,
+      "styles": [],
+      "color": "#516b65",
+      "initials": "RM",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q19895421",
+        "url": "https://www.wikidata.org/wiki/Q19895421",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "e5ad94c4-c2b7-5e93-9fa1-8a18165f0f5e",
+      "externalId": "Q460277",
+      "name": "Roger Deakins",
+      "alternativeNames": [],
+      "department": "Cinematography",
+      "subtitle": "Cinematography professional",
+      "bio": null,
+      "styles": [
+        "Atmospheric cinematography",
+        "High-contrast lighting"
+      ],
+      "color": "#75594f",
+      "initials": "RD",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21500755",
+        "url": "https://www.wikidata.org/wiki/Q21500755",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "bd6e9d88-a984-50f7-ba89-6b06f0f2d7c9",
+      "externalId": "Q15629981",
+      "name": "Joe Walker",
+      "alternativeNames": [],
+      "department": "Film editing",
+      "subtitle": "Film editing professional",
+      "bio": null,
+      "styles": [],
+      "color": "#535d68",
+      "initials": "JW",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21500755",
+        "url": "https://www.wikidata.org/wiki/Q21500755",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "41ad2815-0d91-5847-8bb6-2738dcb0d753",
+      "externalId": "Q1189128",
+      "name": "Dennis Gassner",
+      "alternativeNames": [],
+      "department": "Production design",
+      "subtitle": "Production design professional",
+      "bio": null,
+      "styles": [],
+      "color": "#78664f",
+      "initials": "DG",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21500755",
+        "url": "https://www.wikidata.org/wiki/Q21500755",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "18fb94b3-ba04-54f6-ba8d-4da26cccfe92",
+      "externalId": "Q25246631",
+      "name": "Renée April",
+      "alternativeNames": [],
+      "department": "Costume design",
+      "subtitle": "Costume design professional",
+      "bio": null,
+      "styles": [],
+      "color": "#59615d",
+      "initials": "RA",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21500755",
+        "url": "https://www.wikidata.org/wiki/Q21500755",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "b84e6d82-6951-5404-8244-d65e21cbbdea",
+      "externalId": "Q76364",
+      "name": "Hans Zimmer",
+      "alternativeNames": [],
+      "department": "Music composition",
+      "subtitle": "Music composition professional",
+      "bio": null,
+      "styles": [],
+      "color": "#5c616f",
+      "initials": "HZ",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21500755",
+        "url": "https://www.wikidata.org/wiki/Q21500755",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "f4f9b8a9-e00b-510a-91f3-827b8c3d938d",
+      "externalId": "Q6056440",
+      "name": "Benjamin Wallfisch",
+      "alternativeNames": [],
+      "department": "Music composition",
+      "subtitle": "Music composition professional",
+      "bio": null,
+      "styles": [],
+      "color": "#77614d",
+      "initials": "BW",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21500755",
+        "url": "https://www.wikidata.org/wiki/Q21500755",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "fbf18bc5-2557-56b3-a866-1f7449ebc8dc",
+      "externalId": "Q514003",
+      "name": "Hoyte van Hoytema",
+      "alternativeNames": [],
+      "department": "Cinematography",
+      "subtitle": "Cinematography professional",
+      "bio": null,
+      "styles": [],
+      "color": "#605a71",
+      "initials": "HH",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q13417189",
+        "url": "https://www.wikidata.org/wiki/Q13417189",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "550a00a4-83aa-5cc4-8cba-99233a3e942e",
+      "externalId": "Q1811998",
+      "name": "Lee Smith",
+      "alternativeNames": [],
+      "department": "Film editing",
+      "subtitle": "Film editing professional",
+      "bio": null,
+      "styles": [],
+      "color": "#516b65",
+      "initials": "LS",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q13417189",
+        "url": "https://www.wikidata.org/wiki/Q13417189",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "e7dfba85-8afb-57b1-be6b-4a0cc987c78c",
+      "externalId": "Q3336708",
+      "name": "Nathan Crowley",
+      "alternativeNames": [],
+      "department": "Production design",
+      "subtitle": "Production design professional",
+      "bio": null,
+      "styles": [],
+      "color": "#75594f",
+      "initials": "NC",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q13417189",
+        "url": "https://www.wikidata.org/wiki/Q13417189",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "78d9844b-ac40-5586-93b2-b2997709ee63",
+      "externalId": "Q511025",
+      "name": "Mary Zophres",
+      "alternativeNames": [],
+      "department": "Costume design",
+      "subtitle": "Costume design professional",
+      "bio": null,
+      "styles": [],
+      "color": "#535d68",
+      "initials": "MZ",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q13417189",
+        "url": "https://www.wikidata.org/wiki/Q13417189",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "9eababa9-2da4-5927-aed5-c46340de9901",
+      "externalId": "Q2059621",
+      "name": "Paul Franklin",
+      "alternativeNames": [],
+      "department": "Visual effects",
+      "subtitle": "Visual effects professional",
+      "bio": null,
+      "styles": [],
+      "color": "#78664f",
+      "initials": "PF",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q13417189",
+        "url": "https://www.wikidata.org/wiki/Q13417189",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "0bbc2b67-182b-5e9a-a6c0-b9ba82f04261",
+      "externalId": "Q1715774",
+      "name": "Stuart Baird",
+      "alternativeNames": [],
+      "department": "Film editing",
+      "subtitle": "Film editing professional",
+      "bio": null,
+      "styles": [],
+      "color": "#59615d",
+      "initials": "SB",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q4941",
+        "url": "https://www.wikidata.org/wiki/Q4941",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "46894bd2-a7e5-5be9-bfb7-a3e520a5565f",
+      "externalId": "Q319996",
+      "name": "Thomas Newman",
+      "alternativeNames": [],
+      "department": "Music composition",
+      "subtitle": "Music composition professional",
+      "bio": null,
+      "styles": [],
+      "color": "#5c616f",
+      "initials": "TN",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q4941",
+        "url": "https://www.wikidata.org/wiki/Q4941",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    },
+    {
+      "id": "81c6b5ff-0805-5867-9837-7923a59b6d81",
+      "externalId": "Q21573201",
+      "name": "Jeffrey Kurland",
+      "alternativeNames": [],
+      "department": "Costume design",
+      "subtitle": "Costume design professional",
+      "bio": null,
+      "styles": [],
+      "color": "#77614d",
+      "initials": "JK",
+      "source": {
+        "name": "Wikidata",
+        "externalId": "Q21935651",
+        "url": "https://www.wikidata.org/wiki/Q21935651",
+        "license": "CC0-1.0",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked",
+        "note": "Checked against structured statements; not independently audited against screen credits."
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "person": "e5ad94c4-c2b7-5e93-9fa1-8a18165f0f5e",
+      "film": "2a816ab5-ad03-5f17-a519-378da914fde2",
+      "tag": "Atmospheric cinematography",
+      "note": "Editorial interpretation: moving light and shadow shape the atmosphere of Wallace’s room.",
+      "source": {
+        "name": "ARRI / Bill O’Leary interview",
+        "externalId": "https://www.arri.com/news/news/lighting-blade-runner-2049/",
+        "url": "https://www.arri.com/news/news/lighting-blade-runner-2049/",
+        "license": "Original editorial annotation based on a published interview; no article text copied",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked"
+      }
+    },
+    {
+      "person": "e5ad94c4-c2b7-5e93-9fa1-8a18165f0f5e",
+      "film": "2a816ab5-ad03-5f17-a519-378da914fde2",
+      "tag": "High-contrast lighting",
+      "note": "Editorial interpretation: the interview describes designed beams and controlled shadows, supporting this film-specific tag.",
+      "source": {
+        "name": "American Society of Cinematographers",
+        "externalId": "https://theasc.com/article/uncanny-valley-blade-runner-2049/",
+        "url": "https://theasc.com/article/uncanny-valley-blade-runner-2049/",
+        "license": "Original editorial annotation based on a published interview; no article text copied",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked"
+      }
+    },
+    {
+      "person": "cc5e753b-d734-552c-986b-3cccb0e26137",
+      "film": "f3823891-d540-5520-baa2-5757e63361a1",
+      "tag": "Naturalistic visuals",
+      "note": "Editorial interpretation: Khalid discusses adapting lighting to the story and locations; this is not a measured career-wide trait.",
+      "source": {
+        "name": "Scroll / Shyju Khalid interview",
+        "externalId": "https://scroll.in/reel/996139/nayattu-cinematographer-shyju-khalid-on-new-malayalam-cinema-the-aesthetic-and-emotions-connect",
+        "url": "https://scroll.in/reel/996139/nayattu-cinematographer-shyju-khalid-on-new-malayalam-cinema-the-aesthetic-and-emotions-connect",
+        "license": "Original editorial annotation based on a published interview; no article text copied",
+        "checkedAt": "2026-10-20",
+        "status": "source-checked"
+      }
+    }
+  ]
+}

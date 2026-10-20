@@ -1,0 +1,31 @@
+import {createHash} from 'node:crypto';
+// Stable namespace IDs; keep an existing external_id mapping when importing into a database.
+export function stableId(key){const h=createHash('sha256').update('btf:'+key).digest();h[6]=(h[6]&15)|80;h[8]=(h[8]&63)|128;const x=h.subarray(0,16).toString('hex');return `${x.slice(0,8)}-${x.slice(8,12)}-${x.slice(12,16)}-${x.slice(16,20)}-${x.slice(20)}`;}
+export const departments=['Cinematography','Film editing','Music composition','Sound design','Sound editing','Production sound mixing','Production design','Art direction','Costume design','Visual effects','Makeup and prosthetics','Choreography','Color grading','Animation'];
+export function validateCatalogue(d){
+ const errors=[];const movies=new Set(),people=new Set(),identities=new Set();
+ const source=(s,context)=>{if(!s?.name||!s.externalId||!/^https:\/\//.test(s.url)||!s.license||!/^\d{4}-\d\d-\d\d$/.test(s.checkedAt)||!['source-checked','needs-review'].includes(s.status))errors.push(`Missing provenance: ${context}`);};
+ for(const p of d.people){if(people.has(p.id)||identities.has('p:'+p.externalId))errors.push('Duplicate person ID');people.add(p.id);identities.add('p:'+p.externalId);if(!p.name||!departments.includes(p.department))errors.push('Invalid person');if(p.photo&&!p.imageRights)errors.push('Unlicensed person image');source(p.source,p.name);}
+ for(const f of d.films){if(movies.has(f.id)||identities.has('f:'+f.externalId))errors.push('Duplicate film ID');movies.add(f.id);identities.add('f:'+f.externalId);if(!f.title||f.year<1880||f.year>2200||!['Malayalam','Hollywood'].includes(f.industry))errors.push('Invalid movie');if(f.poster&&!f.imageRights)errors.push('Unlicensed poster');source(f.source,f.title);const keys=new Set();for(const c of f.crew){if(!people.has(c.person))errors.push(`Dangling credit: ${f.title}`);if(!departments.includes(c.department)||!c.role)errors.push('Invalid role');const k=c.person+'|'+c.role;if(keys.has(k))errors.push('Duplicate crew credit');keys.add(k);source(c.source,f.title+'/'+c.role);}}
+ for(const a of d.annotations){if(!d.films.some(f=>f.id===a.film&&f.crew.some(c=>c.person===a.person)))errors.push('Style evidence must reference an actual credit');source(a.source,a.tag);}
+ if(errors.length)throw new Error(errors.join('\n'));return {films:d.films.length,technicians:d.people.length,credits:d.films.reduce((n,f)=>n+f.crew.length,0),annotations:d.annotations.length};
+}
+const quote=s=>s==null?'null':"'"+String(s).replaceAll("'","''")+"'";
+const array=a=>'array['+a.map(quote).join(',')+']::text[]';
+export function seedSQL(d){
+ validateCatalogue(d);const lines=['begin;'];const sources=new Map();
+ for(const s of [...d.people.map(p=>p.source),...d.films.flatMap(f=>[f.source,...f.crew.map(c=>c.source)]),...d.annotations.map(a=>a.source)])sources.set(s.name+'|'+s.externalId,s);
+ const sid=s=>stableId('source/'+s.name+'/'+s.externalId);
+ for(const s of sources.values())lines.push(`insert into public.source_provenance(id,name,external_id,url,license,checked_at,status,note) values(${[sid(s),s.name,s.externalId,s.url,s.license,s.checkedAt,s.status,s.note].map(quote)}) on conflict(name,external_id) do update set url=excluded.url,license=excluded.license,checked_at=excluded.checked_at,status=excluded.status,note=excluded.note;`);
+ // Preserve ID on re-import. Source IDs are deterministic and conflicts are guarded below.
+ for(const p of d.people)lines.push(`insert into public.technicians(id,external_id,name,alternative_names,primary_department,subtitle,bio,color,initials,source_id,published) values(${[p.id,p.externalId,p.name].map(quote)},${array(p.alternativeNames)},${[p.department,p.subtitle,p.bio,p.color,p.initials,sid(p.source)].map(quote)},true) on conflict(id) do update set name=excluded.name,alternative_names=excluded.alternative_names,primary_department=excluded.primary_department,subtitle=excluded.subtitle,bio=excluded.bio,source_id=excluded.source_id;`);
+ for(const f of d.films){
+ lines.push(`insert into public.movies(id,external_id,title,original_title,year,language,countries,industry,synopsis,runtime,color,source_id,published) values(${[f.id,f.externalId,f.title,f.originalTitle].map(quote)},${f.year},${quote(f.language)},${array(f.countries)},${[f.industry,f.synopsis].map(quote)},${f.runtime??'null'},${[f.color,sid(f.source)].map(quote)},true) on conflict(id) do update set title=excluded.title,original_title=excluded.original_title,year=excluded.year,language=excluded.language,countries=excluded.countries,industry=excluded.industry,synopsis=excluded.synopsis,runtime=excluded.runtime,source_id=excluded.source_id;`);
+ for(const genre of f.genres)lines.push(`insert into public.genres values(${quote(genre)}) on conflict do nothing;insert into public.movie_genres values(${quote(f.id)},${quote(genre)}) on conflict do nothing;`);
+ for(const c of f.crew)lines.push(`insert into public.technician_roles values(${quote(c.role)},${quote(c.department)}) on conflict(name) do nothing;insert into public.crew_credits(movie_id,technician_id,role,department,source_id) values(${[f.id,c.person,c.role,c.department,sid(c.source)].map(quote)}) on conflict(movie_id,technician_id,role) do update set department=excluded.department,source_id=excluded.source_id;`);
+ if(f.externalId.startsWith('Q'))lines.push(`insert into public.external_identifiers(movie_id,provider,value) values(${quote(f.id)},'wikidata',${quote(f.externalId)}) on conflict(provider,value) do nothing;`);
+ }
+ for(const p of d.people)if(p.externalId.startsWith('Q'))lines.push(`insert into public.external_identifiers(technician_id,provider,value) values(${quote(p.id)},'wikidata',${quote(p.externalId)}) on conflict(provider,value) do nothing;`);
+ for(const a of d.annotations){const aid=stableId('annotation/'+a.film+'/'+a.tag+'/'+sid(a.source));lines.push(`insert into public.style_tags values(${quote(a.tag)}) on conflict do nothing;insert into public.movie_style_annotations(id,movie_id,tag,note,source_id) values(${[aid,a.film,a.tag,a.note,sid(a.source)].map(quote)}) on conflict(id) do update set note=excluded.note;insert into public.technician_style_evidence values(${[aid,a.person].map(quote)}) on conflict do nothing;`);}
+ lines.push('commit;');return lines.join('\n')+'\n';
+}

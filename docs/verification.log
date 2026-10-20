@@ -1,0 +1,71 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> behind-the-frame@1.0.0 check
+> npm run typecheck && npm run lint && npm test && npm run test:db && npm run evaluate && npm run build
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> behind-the-frame@1.0.0 typecheck
+> tsc --noEmit
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> behind-the-frame@1.0.0 lint
+> eslint src tests scripts --max-warnings=0
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> behind-the-frame@1.0.0 test
+> vitest run
+
+
+ RUN  v5.0.5 /workspace/scratch/b076624aaaf2/project/behind-the-frame
+
+
+ Test Files  4 passed (4)
+      Tests  18 passed (18)
+   Start at  15:24:17
+   Duration  2.57s (environment 54%, tests 25%, transform 11%, import 9%)
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> behind-the-frame@1.0.0 test:db
+> node scripts/test-database.mjs
+
+PASS: migrations, repeated seed, catalogue RPCs, private persistence and RLS (19 assertions). PostgreSQL engine: PGlite; Supabase Auth/Edge transport not exercised.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> behind-the-frame@1.0.0 evaluate
+> node --experimental-strip-types scripts/evaluate.mjs
+
+{
+  "scope": "Six handcrafted fixture cases over the 10-film starter catalogue, with relevant technicians selected from known credits. Regression evidence only; not a held-out user study, calibration, fairness analysis or proof of generalization.",
+  "metrics": {
+    "hybrid": {
+      "mrr": 1,
+      "hitAt3": 1
+    },
+    "popularity": {
+      "mrr": 0.542,
+      "hitAt3": 0.833
+    },
+    "genre-overlap": {
+      "mrr": 0.833,
+      "hitAt3": 1
+    }
+  }
+}
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> behind-the-frame@1.0.0 build
+> tsc -b && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 1788 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.80 kB │ gzip:   0.45 kB
+dist/assets/index-CpJ0z52n.css   37.19 kB │ gzip:   8.27 kB
+dist/assets/index-BP0qqTp_.js   410.37 kB │ gzip: 124.24 kB
+✓ built in 2.46s

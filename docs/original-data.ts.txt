@@ -1,0 +1,50 @@
+export type Department = 'Cinematography'|'Editing'|'Music'|'Sound'|'Production Design';
+export type Person = {id:string;name:string;department:Department;subtitle:string;bio:string;styles:string[];color:string;initials:string};
+export type Film = {id:string;title:string;year:number;language:string;genres:string[];synopsis:string;color:string;crew:{person:string;role:string}[]};
+export const styles=['Atmospheric lighting','Naturalistic visuals','Bold compositions','Intimate storytelling','Rhythmic editing','Immersive sound','Evocative music','Dreamlike imagery','High-energy pacing','Minimalist aesthetics'];
+export const departments:Department[]=['Cinematography','Editing','Music','Sound','Production Design'];
+// Carefully curated seed records for demonstrating the product; expand and audit before publication.
+export const people:Person[]=[
+{id:'shyju-khalid',name:'Shyju Khalid',department:'Cinematography',subtitle:'Indian cinematographer',bio:'Known for expressive imagery across Malayalam-language films, from intimate dramas to ambitious large-scale storytelling.',styles:['Naturalistic visuals','Intimate storytelling','Atmospheric lighting'],color:'#6e6c61',initials:'SK'},
+{id:'girish-gangadharan',name:'Girish Gangadharan',department:'Cinematography',subtitle:'Indian cinematographer',bio:'A cinematographer whose work spans vivid, energetic and atmospheric Malayalam cinema.',styles:['Atmospheric lighting','Bold compositions','High-energy pacing'],color:'#75594f',initials:'GG'},
+{id:'jomon-t-john',name:'Jomon T. John',department:'Cinematography',subtitle:'Indian cinematographer',bio:'A cinematographer working across Malayalam and other Indian film industries.',styles:['Bold compositions','Dreamlike imagery','Naturalistic visuals'],color:'#535d68',initials:'JJ'},
+{id:'little-swayamp',name:'Little Swayamp',department:'Cinematography',subtitle:'Indian cinematographer',bio:'Cinematographer recognised for visual storytelling in contemporary Malayalam cinema.',styles:['Atmospheric lighting','Dreamlike imagery','Intimate storytelling'],color:'#78664f',initials:'LS'},
+{id:'mahesh-narayanan',name:'Mahesh Narayanan',department:'Editing',subtitle:'Indian film editor and director',bio:'An editor and filmmaker known for his work in Malayalam cinema.',styles:['Rhythmic editing','Intimate storytelling','High-energy pacing'],color:'#59615d',initials:'MN'},
+{id:'saiju-sreedharan',name:'Saiju Sreedharan',department:'Editing',subtitle:'Indian film editor',bio:'A film editor whose work includes contemporary Malayalam dramas and thrillers.',styles:['Rhythmic editing','Intimate storytelling','Minimalist aesthetics'],color:'#5c616f',initials:'SS'},
+{id:'sushin-shyam',name:'Sushin Shyam',department:'Music',subtitle:'Indian composer',bio:'A composer known for memorable scores and songs in modern Malayalam films.',styles:['Evocative music','Atmospheric lighting','Intimate storytelling'],color:'#77614d',initials:'SS'},
+{id:'rex-vijayan',name:'Rex Vijayan',department:'Music',subtitle:'Indian composer and musician',bio:'A musician and film composer working across independent and mainstream Malayalam cinema.',styles:['Evocative music','Minimalist aesthetics','Dreamlike imagery'],color:'#605a71',initials:'RV'},
+{id:'vishnu-govind',name:'Vishnu Govind',department:'Sound',subtitle:'Indian sound designer',bio:'Sound designer and mixing engineer working on Malayalam films.',styles:['Immersive sound','Atmospheric lighting','Intimate storytelling'],color:'#596a6b',initials:'VG'},
+{id:'ajayan-chalissery',name:'Ajayan Chalissery',department:'Production Design',subtitle:'Indian production designer',bio:'Production designer and art director associated with Malayalam cinema.',styles:['Naturalistic visuals','Bold compositions','Intimate storytelling'],color:'#6c6758',initials:'AC'}
+];
+export const films:Film[]=[
+{id:'kumbalangi-nights',title:'Kumbalangi Nights',year:2019,language:'Malayalam',genres:['Drama','Family'],synopsis:'Four brothers navigate fractured relationships, love and belonging in a coastal village.',color:'#516b65',crew:[{person:'shyju-khalid',role:'Cinematography'},{person:'saiju-sreedharan',role:'Editing'},{person:'sushin-shyam',role:'Music'},{person:'vishnu-govind',role:'Sound design'}]},
+{id:'jallikattu',title:'Jallikattu',year:2019,language:'Malayalam',genres:['Thriller','Drama'],synopsis:'A runaway buffalo sends a village into escalating chaos.',color:'#775044',crew:[{person:'girish-gangadharan',role:'Cinematography'},{person:'vishnu-govind',role:'Sound design'}]},
+{id:'premam',title:'Premam',year:2015,language:'Malayalam',genres:['Romance','Comedy'],synopsis:'A coming-of-age journey through three chapters of love.',color:'#77745a',crew:[{person:'jomon-t-john',role:'Cinematography'},{person:'shyju-khalid',role:'Cinematography'}]},
+{id:'bangalore-days',title:'Bangalore Days',year:2014,language:'Malayalam',genres:['Drama','Romance'],synopsis:'Three cousins navigate their ambitions and relationships after moving to Bengaluru.',color:'#646b81',crew:[{person:'sameer-thahir',role:'Cinematography'},{person:'gopi-sundar',role:'Music'}]},
+{id:'manjummel-boys',title:'Manjummel Boys',year:2024,language:'Malayalam',genres:['Thriller','Adventure'],synopsis:'A group of friends confronts an extraordinary rescue challenge.',color:'#52635e',crew:[{person:'shyju-khalid',role:'Cinematography'},{person:'sushin-shyam',role:'Music'},{person:'ajayan-chalissery',role:'Production design'}]},
+{id:'romancham',title:'Romancham',year:2023,language:'Malayalam',genres:['Comedy','Horror'],synopsis:'Roommates encounter strange events after experimenting with a spirit board.',color:'#776c53',crew:[{person:'sushin-shyam',role:'Music'},{person:'girish-gangadharan',role:'Cinematography'}]},
+{id:'maheshinte-prathikaaram',title:'Maheshinte Prathikaaram',year:2016,language:'Malayalam',genres:['Comedy','Drama'],synopsis:'A small-town photographer confronts pride, dignity and unexpected romance.',color:'#6d775e',crew:[{person:'shyju-khalid',role:'Cinematography'},{person:'saiju-sreedharan',role:'Editing'}]},
+{id:'trance',title:'Trance',year:2020,language:'Malayalam',genres:['Drama','Thriller'],synopsis:'A motivational speaker becomes caught up in a world of spectacle and manipulation.',color:'#6d536b',crew:[{person:'amal-neerad',role:'Cinematography'},{person:'sushin-shyam',role:'Music'}]},
+{id:'minnal-murali',title:'Minnal Murali',year:2021,language:'Malayalam',genres:['Action','Fantasy'],synopsis:'An ordinary tailor develops extraordinary powers after a lightning strike.',color:'#536c7b',crew:[{person:'sameer-thahir',role:'Cinematography'},{person:'shaan-rahman',role:'Music'},{person:'sushin-shyam',role:'Music'}]},
+{id:'aavesham',title:'Aavesham',year:2024,language:'Malayalam',genres:['Action','Comedy'],synopsis:'Three students cross paths with a flamboyant local gangster.',color:'#75624a',crew:[{person:'sushin-shyam',role:'Music'},{person:'vivek-harshan',role:'Editing'}]},
+{id:'bramayugam',title:'Bramayugam',year:2024,language:'Malayalam',genres:['Horror','Mystery'],synopsis:'A folk-horror tale set in a mysterious manor.',color:'#575653',crew:[{person:'shehnad-jalal',role:'Cinematography'},{person:'christo-xavier',role:'Music'}]},
+{id:'parava',title:'Parava',year:2017,language:'Malayalam',genres:['Drama'],synopsis:'An intimate story of friendship, community and pigeons in Fort Kochi.',color:'#596777',crew:[{person:'little-swayamp',role:'Cinematography'},{person:'rex-vijayan',role:'Music'}]}
+];
+// Unresolved collaborators are intentionally listed on films but never presented as completed person profiles.
+export const personById=(id:string)=>people.find(p=>p.id===id);
+export const filmById=(id:string)=>films.find(f=>f.id===id);
+export const creditsFor=(id:string)=>films.filter(f=>f.crew.some(c=>c.person===id));
+export const filmStyles=(f:Film)=>Array.from(new Set(f.crew.flatMap(c=>personById(c.person)?.styles||[])));
+export type Recommendation={person:Person;score:number;matched:string[];references:Film[];reason:string};
+export function recommend(favourites:string[],chosenStyles:string[],dept:string):Recommendation[]{
+ const seen=new Set(favourites); const favFilms=films.filter(f=>seen.has(f.id));
+ return people.filter(p=>dept==='All departments'||p.department===dept).map(person=>{
+ const references=creditsFor(person.id); const matched=chosenStyles.filter(s=>person.styles.includes(s));
+ const direct=references.filter(f=>seen.has(f.id));
+ const similarGenres=references.reduce((n,f)=>n+(f.genres.some(g=>favFilms.some(ff=>ff.genres.includes(g)))?1:0),0);
+ const score=matched.length*24+direct.length*30+Math.min(similarGenres,3)*6+Math.min(references.length,5)*2;
+ const evidence=direct.length?`You liked ${direct.slice(0,2).map(f=>f.title).join(' and ')}, which credit ${person.name}.`:references.length?`Explore their credited work on ${references.slice(0,2).map(f=>f.title).join(' and ')}.`:`Discover this ${person.department.toLowerCase()} professional.`;
+ const reason=(matched.length?`Matches your interest in ${matched.slice(0,2).join(' and ').toLowerCase()}. `:'')+evidence;
+ return {person,score,matched,references,reason};
+ }).filter(r=>r.references.length>0).sort((a,b)=>b.score-a.score||a.person.name.localeCompare(b.person.name));
+}
