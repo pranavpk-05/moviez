@@ -1,34 +1,27 @@
-# Behind the Frame — Cinematheque edition
+# Behind / Frame — cinema journal redesign
 
-A film-journal / screening-room direction, with a charcoal background, parchment text, tungsten gold, muted olive and teal. The revision keeps the discovery, onboarding, favourites, profiles and collaboration interactions intact.
+The interface uses a charcoal canvas, warm amber actions, DM Sans typography and selective Playfair Display italics. Shared spacing, subtle borders, readable text and clear active navigation connect the landing page, discovery, profiles, collections and taste flow.
 
-## What changed
+## Visual assets
 
-- Projection-room hero with motion-picture camera, reels, celluloid and warm light.
-- Original cinema atmosphere studies in layered contact sheets and a subtle site-wide film-strip background.
-- Viewfinder marks, frame counters, restrained grain, film-journal mastheads and widescreen detail-page backdrops.
-- More cinematic movie cards and taste selections, craft cards, borders, spacing, typography, hover states and mobile layouts.
-- Reduced-motion support disables the slow background/reel animation when requested by the visitor's system.
+- `src/assets/poster-wall.jpg` is the reference collage supplied for this redesign. It is bundled by Vite, so the hero does not depend on a third-party image host. The angled wall uses directional gradients to preserve text contrast on desktop and mobile.
+- Existing atmosphere studies remain decorative artwork for film cards without official posters. They are labelled “ART STUDY”; the poster collage is decorative and does not imply those films are available in the catalogue.
+- Artist cards use intentional monograms and craft icons when verified photos are unavailable. Counts come from catalogue credits. The landing page features artists from both cinema collections without duplicating people.
+- `public/brand-mark.svg` provides the matching favicon.
 
-## Artwork and truthfulness
+## Layout and interaction
 
-The backgrounds are original generated atmosphere studies. They do not depict actual frames from the listed films or imply photographs of technicians. The UI labels decorative film card art as ART STUDY. Licensed movie.poster images, when supplied, take precedence over generated decorative card art. No generated image is used as a factual source or recommender input.
+The landing page leads with “Look beyond the screen,” primary discovery and taste actions, then direct routes into Malayalam cinema, Hollywood cinema and personal taste. Artist cards, the taste invitation, film collections, department discovery and collaborations follow.
 
-Assets are bundled at:
+The mobile header has an expandable menu with an accessible control relationship, active-page indicators and Escape dismissal. A skip link supports keyboard navigation. Route changes reset scroll after rendering; decorative motion respects reduced-motion preferences. A 390px layout uses two-column film and artist grids and stacked discovery paths.
 
-- `src/assets/cinephile-hero.png` — original projection-room hero, 1920 × 819.
-- `src/assets/cinema-contact-sheet.png` — six equal scene studies, 1536 × 1024, cropped through CSS.
+Existing catalogue data, credit sources, authentication boundaries, taste selection and recommendation logic are retained. The UI redesign does not add film records or configure Supabase.
 
-The generated artwork adds about 4.7 MiB of local raster assets. The two source PNGs and production copies are included in the ZIP; no third-party image API is called at runtime.
+## Verification
 
-Generation used the built-in image generation tool, not the fallback CLI or an external API key. The output was copied into this project and visually inspected. Styling lives in `src/cinephile.css`; `src/CinemaAtmosphere.tsx` owns the reusable decorative artwork layers.
-
-## Generation prompts
-
-### Hero
-
-Use case: stylized-concept. Asset type: cinematic website hero background for a cinephile film technician discovery website called Behind the Frame. Create a premium photorealistic editorial cinema triptych as ONE continuous panoramic image, landscape 1536x1024 or wider composition. No words, no letters, no typography, no logos, no watermarks. Main composition on the RIGHT TWO THIRDS: a large vintage 35mm motion picture camera with beautiful glass lens and real film reels in a dim projection room, clapperboard and curling strips of celluloid on the table, warm tungsten projector beam through smoke; behind it a collage of four original cinematic frames: lush Kerala backwater landscape at dusk, rain-drenched neon city street at night, desert silhouettes at sunset, black-and-white closeup of a film projector lens. These must be original evocative scenes, not recreations of any particular movie or actor, no recognisable faces. LEFT THIRD: very dark charcoal near-black negative space with soft texture for website heading overlay. Sophisticated restrained amber/gold, desaturated olive, deep teal, oxblood details. Tactile film grain, halation, chiaroscuro lighting, rich analog tones, museum quality film culture aesthetic, realistic materials, carefully composed depth. Keep important camera/lens in middle-right visible for both desktop and mobile crops.
-
-### Contact sheet
-
-Use case: stylized-concept. Asset type: a seamless website contact-sheet artwork atlas, 1536x1024 landscape, EXACTLY SIX square photographic panels arranged in a strict 3-column by 2-row grid, every panel identical size, edge to edge, absolutely NO borders, gaps, text, letters, watermarks, logos, frames or typography. Each square is an original evocative cinematic composition, not from any existing film and no recognisable actors. TOP LEFT: Kerala backwater at blue hour, one small canoe and palms silhouetted, deep emerald and muted gold. TOP MIDDLE: rainy neon city lane with a tiny distant silhouette, deep teal and warm orange. TOP RIGHT: vast alien desert dunes at amber dusk, two small unidentifiable travelers in silhouette, beautiful lens flare. BOTTOM LEFT: high-contrast black and white stairwell in a noir city, diagonal window shadows, very cinematic. BOTTOM MIDDLE: remote rocky coast in a storm with one small warm lighthouse, desaturated navy blue and silver. BOTTOM RIGHT: nostalgic railway station in Kerala under monsoon rain, warm tungsten lamps, empty platform and lush foliage, olive and rust. Sophisticated motion-picture cinematography, tactile 35mm film grain, analog halation, restrained photographic compositions, deep blacks, art-house film culture editorial aesthetic. These are decorative mood studies for a website, not actual movie stills. Maintain precise grid alignment to allow six equal CSS crops.
+- Production TypeScript/Vite build passed.
+- All 18 existing Vitest tests passed.
+- Browser inspection covered the complete desktop landing page and the 390px mobile layout.
+- Browser interaction verified mobile menu → Hollywood search → Blade Runner 2049 → Roger Deakins profile and collaboration graph.
+- Browser interaction verified selecting three films and opening recommendation explanations.
+- Authenticated persistence was not exercised: the current live site uses the starter catalogue without a configured account integration.
