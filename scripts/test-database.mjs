@@ -2,6 +2,7 @@ import {PGlite} from '@electric-sql/pglite';
 import {pg_trgm} from '@electric-sql/pglite/contrib/pg_trgm';
 import {readFile,readdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
+import {normalizeMovie,stableId} from '../server/tmdb.mjs';
 const db=new PGlite({extensions:{pg_trgm}});let assertions=0;const ok=(v,msg)=>{assert.ok(v,msg);assertions++};
 try{
  await db.exec(`create role anon;create role authenticated;create role service_role bypassrls;create schema auth;create table auth.users(id uuid primary key,raw_user_meta_data jsonb default '{}');create function auth.uid() returns uuid language sql stable as $$ select nullif(current_setting('request.jwt.claim.sub',true),'')::uuid $$;grant usage on schema auth to anon,authenticated;grant execute on function auth.uid() to anon,authenticated;`);
@@ -34,5 +35,20 @@ try{
  denied=false;try{await db.query('insert into public.saved_collection_entries(collection_id,user_id,movie_id) values($1,$2,$3)',['cccccccc-cccc-4ccc-8ccc-cccccccccccc',bob,film])}catch{denied=true}ok(denied,'Bob cannot insert into Alice collection');
  denied=false;try{await db.query("update public.movies set published=false where id=$1",[film])}catch{denied=true}ok(denied,'Signed-in users cannot edit catalogue');
  await db.exec('reset role');await db.query('delete from auth.users where id=$1',[alice]);ok((await db.query('select * from public.favourite_movies')).rows.length===0&&(await db.query('select * from public.saved_collection_entries')).rows.length===0,'Account deletion cascades private data');
+ // Exercise the trusted TMDB import, including permission and rollback boundaries.
+ const incoming=normalizeMovie({id:900001,title:'TMDB test fixture',original_title:'TMDB test fixture',original_language:'hi',release_date:'2024-01-01',production_countries:[{iso_3166_1:'IN',name:'India'}],genres:[{name:'Drama'}],poster_path:'/fixture.jpg',credits:{crew:[{id:900002,name:'Fixture Maker',department:'Directing',job:'Director'}]}});
+ const sourceMap=new Map([incoming.films[0].source,...incoming.people.map(p=>p.source)].map(s=>[s.externalId,{...s,id:stableId('source/'+s.name+'/'+s.externalId)}]));
+ const syncPayload={...incoming,sources:[...sourceMap.values()]};
+ await db.exec('set role anon');denied=false;try{await db.query('select public.sync_tmdb_movie($1::jsonb)',[JSON.stringify(syncPayload)])}catch{denied=true}ok(denied,'Anonymous cannot invoke trusted TMDB import');
+ await db.exec('set role authenticated');denied=false;try{await db.query('select public.sync_tmdb_movie($1::jsonb)',[JSON.stringify(syncPayload)])}catch{denied=true}ok(denied,'Signed-in users cannot forge TMDB catalogue imports');
+ await db.exec('set role service_role');await db.query('select public.sync_tmdb_movie($1::jsonb)',[JSON.stringify(syncPayload)]);await db.query('select public.sync_tmdb_movie($1::jsonb)',[JSON.stringify(syncPayload)]);
+ ok((await db.query('select count(*)::int total from public.movies where external_id=$1',['tmdb:900001'])).rows[0].total===1,'TMDB import is idempotent');
+ const importedId=incoming.films[0].id;
+ ok((await db.query('select poster,industry from public.movies where id=$1',[importedId])).rows[0].industry==='World Cinema','World cinema and licensed poster metadata persist');
+ const broken=structuredClone(syncPayload);broken.films[0].title='Should roll back';broken.films[0].crew[0].person='dddddddd-dddd-4ddd-8ddd-dddddddddddd';denied=false;
+ try{await db.query('select public.sync_tmdb_movie($1::jsonb)',[JSON.stringify(broken)])}catch{denied=true}ok(denied,'Bad TMDB credits fail import');
+ ok((await db.query('select title from public.movies where id=$1',[importedId])).rows[0].title==='TMDB test fixture','A failed import rolls back metadata and credits together');
+ await db.exec('set role anon');ok((await db.query("select public.catalogue_page('films',0,100) result")).rows[0].result.some(f=>f.id===importedId&&f.crew.length===1),'Synced films and crew are visible through the existing catalogue API');
+ await db.exec('reset role');
  console.log(`PASS: migrations, repeated seed, catalogue RPCs, private persistence and RLS (${assertions} assertions). PostgreSQL engine: PGlite; Supabase Auth/Edge transport not exercised.`);
 }finally{await db.close()}

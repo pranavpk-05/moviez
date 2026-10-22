@@ -1,8 +1,8 @@
 # Behind the Frame
 
-A React + TypeScript + Vite film technician discovery app, upgraded from the supplied MVP. Malayalam and Hollywood use the same catalogue, screens, recommender and database schema. The cinephile edition layers original cinema artwork, contact sheets, film-strip backgrounds, warm projector light and film-journal typography over the shared discovery experience. Hash navigation and all existing application features are retained.
+A React + TypeScript + Vite film technician discovery app with a cinematic poster-wall interface. The TMDB film library adds global title search, paged collections, posters, ratings, full available technical crew lists and linked technician filmographies.
 
-**What runs immediately:** source-linked film and technician browsing, search, filtering, taste onboarding, explainable recommendations, and the collaboration explorer. **What needs your Supabase project:** registration/login, email verification, password recovery, persistent saves/collections/profile preferences, and account deletion. No live Supabase project was configured during this build.
+The included catalogue works immediately. Live TMDB access requires a server-side API Read Access Token. Accounts and cross-device collections require Supabase. See [TMDB setup and sync](docs/TMDB-INTEGRATION.md).
 
 ## Windows 11 quick start
 
@@ -16,6 +16,16 @@ npm run dev
 Open the URL Vite prints, usually `http://localhost:5173`. Run these commands in the folder containing **package.json**. Do not run them from the outer ZIP/extraction folder if you have not opened the actual project folder yet.
 
 You can use the starter catalogue without an environment file. Guests can explore taste during the session. Saving technicians and collections requires sign-in; the app never simulates a signed-in account or pretends localStorage is cross-device persistence.
+
+## Enable the live TMDB library on Vercel
+
+1. Request an **API Read Access Token** in your [TMDB account settings](https://www.themoviedb.org/settings/api).
+2. In Vercel → moviez → Settings → Environment Variables, add `TMDB_READ_ACCESS_TOKEN` for Production (and Preview if desired).
+3. Redeploy. Open `/#library` and search a film. `/api/tmdb?resource=status` returns only the connection boolean.
+
+This token belongs in the server environment. Never use a `VITE_` prefix or commit it. No payment or subscription is needed for non-commercial use, subject to TMDB's terms and attribution requirements.
+
+For local development, put the same variable in ignored `.env.local`, then restart `npm run dev`. The Vite dev server runs the same API handler used by Vercel. `npm run preview` is a static preview and does not serve the API.
 
 ## Included catalogue
 
@@ -41,7 +51,8 @@ The simplest option uses Supabase's **SQL Editor**, in this order:
 
 1. `supabase/migrations/202610200001_core.sql`
 2. `supabase/migrations/202610200002_api.sql`
-3. `supabase/seed.sql`
+3. `supabase/migrations/202610220001_tmdb_sync.sql`
+4. `supabase/seed.sql`
 
 The migrations create new tables and functions in `public`. Use a fresh project or inspect for name collisions before applying to a project containing another application. Seed SQL is intended for initial setup and repeat imports of this same starter. For adding external records to an existing project, use the uploader, which resolves existing IDs.
 
@@ -117,7 +128,7 @@ Use the production origin for a production deployment. The origin is exact, with
 
 ## Import more films
 
-No TMDB integration is included. The Wikidata importer uses CC0 structured statements, excludes explicitly TMDB-referenced/deprecated statements, and imports no article bodies, photographs, biographies or synopses.
+The live TMDB library is separate from the optional reviewed Wikidata bulk importer. The Wikidata importer uses CC0 structured statements, excludes explicitly TMDB-referenced/deprecated statements, and imports no article bodies, photographs, biographies or synopses.
 
 Set `WIKIDATA_USER_AGENT` in `.env.local` with a contact email, then:
 
@@ -127,7 +138,7 @@ npm run ingest:wikidata -- --limit=250
 
 This **discovers up to 250 candidate films per industry** and writes `data/pending-catalogue.json` plus page checkpoints. It does not guarantee that every candidate has usable credits, and it publishes nothing. Malayalam is selected by original language. The initial Hollywood discovery query selects English-language films with United States production-country statements. International productions without that country statement need an explicitly reviewed import list rather than automatic classification as Hollywood.
 
-The importer covers Wikidata's director-of-photography, editor and composer properties. All 14 required departments exist in the schema; additional departments need reviewed property/job mappings and sources. Pending imports have `needs-review` provenance. Review identities, title/year, collection, references and exact credits before changing them to `source-checked`. An external-ID conflict or same-name/different-ID person is a review stop, not an automatic fuzzy merge.
+The importer covers Wikidata's director-of-photography, editor and composer properties. All original craft departments plus direction, writing and production exist in the schema; additional departments need reviewed property/job mappings and sources. Pending imports have `needs-review` provenance. Review identities, title/year, collection, references and exact credits before changing them to `source-checked`. An external-ID conflict or same-name/different-ID person is a review stop, not an automatic fuzzy merge.
 
 To upload records, set `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY` **only in your local ignored environment file** or your server's secret environment. Run this Node CLI locally; never host it as a public endpoint:
 

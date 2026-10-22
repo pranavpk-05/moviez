@@ -6,7 +6,7 @@ afterEach(()=>{cleanup();vi.unstubAllGlobals()});
 async function route(hash:string){location.hash=hash;window.dispatchEvent(new HashChangeEvent('hashchange'));await waitFor(()=>expect(location.hash).toBe(hash));}
 describe('rendered app journeys (DOM, not browser layout)',()=>{
  it.each([['Malayalam','Kumbalangi Nights','Shyju Khalid'],['Hollywood','Blade Runner 2049','Roger Deakins']])('explores %s film, crew and linked filmography',async(industry,title,name)=>{
-  render(<App/>);fireEvent.click(within(screen.getByRole('navigation',{name:'Main navigation'})).getByText(industry));
+  render(<App/>);await route('#search');fireEvent.click(within(screen.getByRole('group',{name:'Cinema collection'})).getByText(industry));
   await waitFor(()=>expect(screen.getByLabelText('Search movies and technicians')).toBeTruthy());
   fireEvent.change(screen.getByLabelText('Search movies and technicians'),{target:{value:title}});
   await waitFor(()=>expect(screen.getByRole('button',{name:'Open '+title})).toBeTruthy());fireEvent.click(screen.getByRole('button',{name:'Open '+title}));

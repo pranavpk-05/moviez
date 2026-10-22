@@ -1,13 +1,13 @@
-export type Industry='Malayalam'|'Hollywood';
+export type Industry='Malayalam'|'Hollywood'|'World Cinema';
 export type IndustryFilter=Industry|'All Cinema';
 export type Source={name:string;externalId:string;url:string;license:string;checkedAt:string;status:'source-checked'|'needs-review';note?:string};
 export type Credit={person:string;role:string;department:string;source:Source};
 export type Annotation={person:string;film:string;tag:string;note:string;source:Source};
-export type Person={id:string;externalId:string;name:string;alternativeNames:string[];department:string;subtitle:string;bio:string|null;styles:string[];color:string;initials:string;source:Source;photo?:string};
-export type Film={id:string;externalId:string;title:string;originalTitle:string;year:number;language:string;countries:string[];industry:Industry;genres:string[];synopsis:string|null;runtime:number|null;color:string;crew:Credit[];source:Source;poster?:string};
+export type Person={id:string;externalId:string;name:string;alternativeNames:string[];department:string;subtitle:string;bio:string|null;styles:string[];color:string;initials:string;source:Source;photo?:string|null;tmdbId?:number;imageRights?:string};
+export type Film={id:string;externalId:string;title:string;originalTitle:string;year:number;language:string;countries:string[];industry:Industry;genres:string[];synopsis:string|null;runtime:number|null;color:string;crew:Credit[];source:Source;poster?:string|null;backdrop?:string|null;tmdbId?:number;imdbId?:string|null;rating?:number|null;votes?:number;imageRights?:string};
 export type Catalogue={films:Film[];people:Person[];annotations:Annotation[]};
 export type Preferences={industries:Industry[];genres:string[];departments:string[];styles:string[]};
 export type Feedback=Record<string,'like'|'dismiss'>;
 export type Collection={id:string;name:string;entries:{id:string;kind:'film'|'person'}[]};
 export type UserData={saved:string[];favourites:string[];preferences:Preferences;feedback:Feedback;collections:Collection[]};
-export const emptyUserData=():UserData=>({saved:[],favourites:[],preferences:{industries:['Malayalam','Hollywood'],genres:[],departments:[],styles:[]},feedback:{},collections:[]});
+export const emptyUserData=():UserData=>({saved:[],favourites:[],preferences:{industries:['Malayalam','Hollywood','World Cinema'],genres:[],departments:[],styles:[]},feedback:{},collections:[]});

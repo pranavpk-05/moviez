@@ -2,7 +2,7 @@ import snapshot from '../data/catalogue.json' with {type:'json'};
 import type {Catalogue,Film,Person,IndustryFilter,Preferences,Feedback} from './types';
 export type {Person,Film} from './types';
 export const starter=snapshot as Catalogue;
-export const departments=['Cinematography','Film editing','Music composition','Sound design','Sound editing','Production sound mixing','Production design','Art direction','Costume design','Visual effects','Makeup and prosthetics','Choreography','Color grading','Animation'];
+export const departments=['Cinematography','Film editing','Music composition','Sound design','Sound editing','Production sound mixing','Production design','Art direction','Costume design','Visual effects','Makeup and prosthetics','Choreography','Color grading','Animation','Direction','Writing','Production'];
 export const styles=['Natural lighting','Naturalistic visuals','High-contrast lighting','Atmospheric cinematography','Handheld camerawork','Long takes','Symmetrical compositions','Experimental camera movement','Fast-paced editing','Slow, contemplative pacing','Nonlinear storytelling','Montage-heavy editing','Continuity-driven editing','Minimalist scoring','Atmospheric sound','Electronic soundtracks','Orchestral composition','Experimental sound design'];
 export const creditsFor=(data:Catalogue,id:string,industry:IndustryFilter='All Cinema')=>data.films.filter(f=>(industry==='All Cinema'||f.industry===industry)&&f.crew.some(c=>c.person===id));
 const overlap=(a:string[],b:string[])=>{const x=new Set(a),y=new Set(b);return x.size&&y.size?[...x].filter(v=>y.has(v)).length/new Set([...x,...y]).size:0};
